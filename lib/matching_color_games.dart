@@ -91,15 +91,15 @@ class _ColorMatchGameState extends State<ColorMatchGame> {
           ),
         ],
       ),
-      bottomNavigationBar: gameConfig == null
-          ? Container()
-          : Container(
-              height: 90,
-              padding: EdgeInsets.all(20),
-              child: ElevatedButton(onPressed: (){
-                print("Game config ${gameConfig!.toJson()}");
-              }, child: Text('Check Answers')),
-            ),
+      // bottomNavigationBar: gameConfig == null
+      //     ? Container()
+      //     : Container(
+      //         height: 90,
+      //         padding: EdgeInsets.all(20),
+      //         child: ElevatedButton(onPressed: (){
+      //           print("Game config ${gameConfig!.toJson()}");
+      //         }, child: Text('Check Answers')),
+      //       ),
       body: gameConfig == null
           ? Center()
           : SingleChildScrollView(
